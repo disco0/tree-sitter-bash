@@ -217,7 +217,11 @@ case "opt" in
     ;;
 
   b)
-    echo b;;
+    echo b
+    ;&
+
+  c)
+    echo c;;
 esac
 
 case "$Z" in
@@ -234,6 +238,8 @@ esac
 
 (program
   (case_statement (string)
+    (case_item (word)
+      (command (command_name (word)) (word)))
     (case_item (word)
       (command (command_name (word)) (word)))
     (case_item (word)
@@ -267,6 +273,26 @@ fi
           (string (simple_expansion (variable_name))))))
       (command_substitution (command (command_name (word)) (raw_string)))))
     (command (command_name (word)) (word))))
+
+
+=============================
+Test commands with ternary
+=============================
+
+if (( 1 < 2 ? 1 : 2 )); then
+	return 1
+fi
+
+---
+
+(program
+  (if_statement
+    (test_command
+      (ternary_expression
+        (binary_expression (word) (word))
+        (word) (word)))
+    (command
+      (command_name (word)) (word))))
 
 =============================
 Test commands with regexes
@@ -345,6 +371,12 @@ do_something() {
   echo ok
 }
 
+run_subshell_command() (
+  true
+)
+
+run_test_command() [[ -e foo ]]
+
 function do_something_else() {
   a | xargs -I{} find xml/{} -type f
 }
@@ -359,6 +391,12 @@ function do_yet_another_thing {
   (function_definition
     (word)
     (compound_statement (command (command_name (word)) (word))))
+  (function_definition
+      (word)
+      (subshell (command (command_name (word)))))
+  (function_definition
+      (word)
+      (test_command (unary_expression (test_operator) (word))))
   (function_definition
     (word)
     (compound_statement

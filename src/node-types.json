@@ -1,5 +1,159 @@
 [
   {
+    "type": "_expression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "_primary_expression",
+        "named": true
+      },
+      {
+        "type": "binary_expression",
+        "named": true
+      },
+      {
+        "type": "concatenation",
+        "named": true
+      },
+      {
+        "type": "parenthesized_expression",
+        "named": true
+      },
+      {
+        "type": "postfix_expression",
+        "named": true
+      },
+      {
+        "type": "ternary_expression",
+        "named": true
+      },
+      {
+        "type": "unary_expression",
+        "named": true
+      },
+      {
+        "type": "word",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "_primary_expression",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "ansii_c_string",
+        "named": true
+      },
+      {
+        "type": "command_substitution",
+        "named": true
+      },
+      {
+        "type": "expansion",
+        "named": true
+      },
+      {
+        "type": "process_substitution",
+        "named": true
+      },
+      {
+        "type": "raw_string",
+        "named": true
+      },
+      {
+        "type": "simple_expansion",
+        "named": true
+      },
+      {
+        "type": "string",
+        "named": true
+      },
+      {
+        "type": "string_expansion",
+        "named": true
+      },
+      {
+        "type": "word",
+        "named": true
+      }
+    ]
+  },
+  {
+    "type": "_statement",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "c_style_for_statement",
+        "named": true
+      },
+      {
+        "type": "case_statement",
+        "named": true
+      },
+      {
+        "type": "command",
+        "named": true
+      },
+      {
+        "type": "compound_statement",
+        "named": true
+      },
+      {
+        "type": "declaration_command",
+        "named": true
+      },
+      {
+        "type": "for_statement",
+        "named": true
+      },
+      {
+        "type": "function_definition",
+        "named": true
+      },
+      {
+        "type": "if_statement",
+        "named": true
+      },
+      {
+        "type": "list",
+        "named": true
+      },
+      {
+        "type": "negated_command",
+        "named": true
+      },
+      {
+        "type": "pipeline",
+        "named": true
+      },
+      {
+        "type": "redirected_statement",
+        "named": true
+      },
+      {
+        "type": "subshell",
+        "named": true
+      },
+      {
+        "type": "test_command",
+        "named": true
+      },
+      {
+        "type": "unset_command",
+        "named": true
+      },
+      {
+        "type": "variable_assignment",
+        "named": true
+      },
+      {
+        "type": "while_statement",
+        "named": true
+      }
+    ]
+  },
+  {
     "type": "array",
     "named": true,
     "fields": {},
@@ -8,43 +162,11 @@
       "required": false,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
           "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -59,59 +181,7 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
-            "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "postfix_expression",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "word",
+            "type": "_expression",
             "named": true
           }
         ]
@@ -187,63 +257,11 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
-            "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "postfix_expression",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
+            "type": "_expression",
             "named": true
           },
           {
             "type": "regex",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -273,59 +291,7 @@
         "required": false,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
-            "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "postfix_expression",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "word",
+            "type": "_expression",
             "named": true
           }
         ]
@@ -335,59 +301,7 @@
         "required": false,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
-            "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "postfix_expression",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "word",
+            "type": "_expression",
             "named": true
           }
         ]
@@ -397,59 +311,7 @@
         "required": false,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
-            "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "postfix_expression",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "word",
+            "type": "_expression",
             "named": true
           }
         ]
@@ -460,48 +322,40 @@
     "type": "case_item",
     "named": true,
     "fields": {
+      "fallthrough": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": ";&",
+            "named": false
+          },
+          {
+            "type": ";;&",
+            "named": false
+          }
+        ]
+      },
+      "termination": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": ";;",
+            "named": false
+          }
+        ]
+      },
       "value": {
         "multiple": true,
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -512,75 +366,11 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -595,43 +385,11 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -665,11 +423,7 @@
             "named": false
           },
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
@@ -677,35 +431,7 @@
             "named": true
           },
           {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
             "type": "regex",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -745,43 +471,11 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
           "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -796,23 +490,7 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
+          "type": "_statement",
           "named": true
         },
         {
@@ -820,55 +498,7 @@
           "named": true
         },
         {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
-          "named": true
-        },
-        {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -883,75 +513,11 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -966,39 +532,7 @@
       "required": false,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "word",
+          "type": "_primary_expression",
           "named": true
         }
       ]
@@ -1013,39 +547,11 @@
       "required": false,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
           "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
           "named": true
         },
         {
@@ -1054,10 +560,6 @@
         },
         {
           "type": "variable_name",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -1072,75 +574,11 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -1155,75 +593,11 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -1238,75 +612,11 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -1318,14 +628,10 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
@@ -1333,35 +639,11 @@
           "named": true
         },
         {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
           "type": "regex",
           "named": true
         },
         {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
           "type": "special_variable_name",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
           "named": true
         },
         {
@@ -1370,10 +652,6 @@
         },
         {
           "type": "variable_name",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -1398,43 +676,11 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -1460,43 +706,11 @@
         "required": false,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -1523,6 +737,14 @@
         "types": [
           {
             "type": "compound_statement",
+            "named": true
+          },
+          {
+            "type": "subshell",
+            "named": true
+          },
+          {
+            "type": "test_command",
             "named": true
           }
         ]
@@ -1586,43 +808,11 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
           "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -1653,71 +843,7 @@
             "named": false
           },
           {
-            "type": "c_style_for_statement",
-            "named": true
-          },
-          {
-            "type": "case_statement",
-            "named": true
-          },
-          {
-            "type": "command",
-            "named": true
-          },
-          {
-            "type": "compound_statement",
-            "named": true
-          },
-          {
-            "type": "declaration_command",
-            "named": true
-          },
-          {
-            "type": "for_statement",
-            "named": true
-          },
-          {
-            "type": "function_definition",
-            "named": true
-          },
-          {
-            "type": "if_statement",
-            "named": true
-          },
-          {
-            "type": "list",
-            "named": true
-          },
-          {
-            "type": "negated_command",
-            "named": true
-          },
-          {
-            "type": "pipeline",
-            "named": true
-          },
-          {
-            "type": "redirected_statement",
-            "named": true
-          },
-          {
-            "type": "subshell",
-            "named": true
-          },
-          {
-            "type": "test_command",
-            "named": true
-          },
-          {
-            "type": "unset_command",
-            "named": true
-          },
-          {
-            "type": "variable_assignment",
-            "named": true
-          },
-          {
-            "type": "while_statement",
+            "type": "_statement",
             "named": true
           }
         ]
@@ -1728,23 +854,7 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
+          "type": "_statement",
           "named": true
         },
         {
@@ -1756,55 +866,7 @@
           "named": true
         },
         {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
-          "named": true
-        },
-        {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -1819,71 +881,7 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
+          "type": "_statement",
           "named": true
         }
       ]
@@ -1921,59 +919,7 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
-          "named": true
-        },
-        {
-          "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "word",
+          "type": "_expression",
           "named": true
         }
       ]
@@ -1988,71 +934,7 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
+          "type": "_statement",
           "named": true
         }
       ]
@@ -2067,59 +949,7 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
-          "named": true
-        },
-        {
-          "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "word",
+          "type": "_expression",
           "named": true
         }
       ]
@@ -2134,75 +964,11 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -2217,75 +983,11 @@
       "required": false,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
           "named": true
         }
       ]
@@ -2300,71 +1002,7 @@
         "required": true,
         "types": [
           {
-            "type": "c_style_for_statement",
-            "named": true
-          },
-          {
-            "type": "case_statement",
-            "named": true
-          },
-          {
-            "type": "command",
-            "named": true
-          },
-          {
-            "type": "compound_statement",
-            "named": true
-          },
-          {
-            "type": "declaration_command",
-            "named": true
-          },
-          {
-            "type": "for_statement",
-            "named": true
-          },
-          {
-            "type": "function_definition",
-            "named": true
-          },
-          {
-            "type": "if_statement",
-            "named": true
-          },
-          {
-            "type": "list",
-            "named": true
-          },
-          {
-            "type": "negated_command",
-            "named": true
-          },
-          {
-            "type": "pipeline",
-            "named": true
-          },
-          {
-            "type": "redirected_statement",
-            "named": true
-          },
-          {
-            "type": "subshell",
-            "named": true
-          },
-          {
-            "type": "test_command",
-            "named": true
-          },
-          {
-            "type": "unset_command",
-            "named": true
-          },
-          {
-            "type": "variable_assignment",
-            "named": true
-          },
-          {
-            "type": "while_statement",
+            "type": "_statement",
             "named": true
           }
         ]
@@ -2459,43 +1097,11 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
-            "named": true
-          },
-          {
-            "type": "command_substitution",
+            "type": "_primary_expression",
             "named": true
           },
           {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -2521,78 +1127,50 @@
       "required": true,
       "types": [
         {
-          "type": "c_style_for_statement",
-          "named": true
-        },
-        {
-          "type": "case_statement",
-          "named": true
-        },
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "compound_statement",
-          "named": true
-        },
-        {
-          "type": "declaration_command",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "function_definition",
+          "type": "_statement",
           "named": true
         },
         {
           "type": "heredoc_body",
           "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "negated_command",
-          "named": true
-        },
-        {
-          "type": "pipeline",
-          "named": true
-        },
-        {
-          "type": "redirected_statement",
-          "named": true
-        },
-        {
-          "type": "subshell",
-          "named": true
-        },
-        {
-          "type": "test_command",
-          "named": true
-        },
-        {
-          "type": "unset_command",
-          "named": true
-        },
-        {
-          "type": "variable_assignment",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "ternary_expression",
+    "named": true,
+    "fields": {
+      "alternative": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expression",
+            "named": true
+          }
+        ]
+      },
+      "condition": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expression",
+            "named": true
+          }
+        ]
+      },
+      "consequence": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expression",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -2604,59 +1182,7 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
-          "named": true
-        },
-        {
-          "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "word",
+          "type": "_expression",
           "named": true
         }
       ]
@@ -2671,63 +1197,11 @@
       "required": true,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
-          "named": true
-        },
-        {
-          "type": "concatenation",
-          "named": true
-        },
-        {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "postfix_expression",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
+          "type": "_expression",
           "named": true
         },
         {
           "type": "test_operator",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -2742,11 +1216,7 @@
       "required": false,
       "types": [
         {
-          "type": "ansii_c_string",
-          "named": true
-        },
-        {
-          "type": "command_substitution",
+          "type": "_primary_expression",
           "named": true
         },
         {
@@ -2754,35 +1224,7 @@
           "named": true
         },
         {
-          "type": "expansion",
-          "named": true
-        },
-        {
-          "type": "process_substitution",
-          "named": true
-        },
-        {
-          "type": "raw_string",
-          "named": true
-        },
-        {
-          "type": "simple_expansion",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "string_expansion",
-          "named": true
-        },
-        {
           "type": "variable_name",
-          "named": true
-        },
-        {
-          "type": "word",
           "named": true
         }
       ]
@@ -2811,7 +1253,7 @@
         "required": true,
         "types": [
           {
-            "type": "ansii_c_string",
+            "type": "_primary_expression",
             "named": true
           },
           {
@@ -2819,39 +1261,7 @@
             "named": true
           },
           {
-            "type": "command_substitution",
-            "named": true
-          },
-          {
             "type": "concatenation",
-            "named": true
-          },
-          {
-            "type": "expansion",
-            "named": true
-          },
-          {
-            "type": "process_substitution",
-            "named": true
-          },
-          {
-            "type": "raw_string",
-            "named": true
-          },
-          {
-            "type": "simple_expansion",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "string_expansion",
-            "named": true
-          },
-          {
-            "type": "word",
             "named": true
           }
         ]
@@ -2893,76 +1303,17 @@
             "named": false
           },
           {
-            "type": "c_style_for_statement",
-            "named": true
-          },
-          {
-            "type": "case_statement",
-            "named": true
-          },
-          {
-            "type": "command",
-            "named": true
-          },
-          {
-            "type": "compound_statement",
-            "named": true
-          },
-          {
-            "type": "declaration_command",
-            "named": true
-          },
-          {
-            "type": "for_statement",
-            "named": true
-          },
-          {
-            "type": "function_definition",
-            "named": true
-          },
-          {
-            "type": "if_statement",
-            "named": true
-          },
-          {
-            "type": "list",
-            "named": true
-          },
-          {
-            "type": "negated_command",
-            "named": true
-          },
-          {
-            "type": "pipeline",
-            "named": true
-          },
-          {
-            "type": "redirected_statement",
-            "named": true
-          },
-          {
-            "type": "subshell",
-            "named": true
-          },
-          {
-            "type": "test_command",
-            "named": true
-          },
-          {
-            "type": "unset_command",
-            "named": true
-          },
-          {
-            "type": "variable_assignment",
-            "named": true
-          },
-          {
-            "type": "while_statement",
+            "type": "_statement",
             "named": true
           }
         ]
       }
     }
+  },
+  {
+    "type": "word",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "\n",
@@ -3077,7 +1428,15 @@
     "named": false
   },
   {
+    "type": ";&",
+    "named": false
+  },
+  {
     "type": ";;",
+    "named": false
+  },
+  {
+    "type": ";;&",
     "named": false
   },
   {
@@ -3141,6 +1500,14 @@
     "named": false
   },
   {
+    "type": ">|",
+    "named": false
+  },
+  {
+    "type": "?",
+    "named": false
+  },
+  {
     "type": "[",
     "named": false
   },
@@ -3201,12 +1568,20 @@
     "named": false
   },
   {
+    "type": "file_descriptor",
+    "named": true
+  },
+  {
     "type": "for",
     "named": false
   },
   {
     "type": "function",
     "named": false
+  },
+  {
+    "type": "heredoc_start",
+    "named": true
   },
   {
     "type": "if",
@@ -3227,6 +1602,10 @@
   {
     "type": "readonly",
     "named": false
+  },
+  {
+    "type": "regex",
+    "named": true
   },
   {
     "type": "special_variable_name",
@@ -3259,10 +1638,6 @@
   {
     "type": "while",
     "named": false
-  },
-  {
-    "type": "word",
-    "named": true
   },
   {
     "type": "{",

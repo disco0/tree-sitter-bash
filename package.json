@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-bash",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "Bash grammar for tree-sitter",
   "main": "index.js",
   "keywords": [
@@ -11,11 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "nan": "^2.14.0",
-    "prebuild-install": "^5.0.0"
+    "prebuild-install": "^5.3.3"
   },
   "devDependencies": {
-    "prebuild": "^7.6.1",
-    "tree-sitter-cli": "^0.16.1"
+    "prebuild": "^10.0.0",
+    "tree-sitter-cli": "^0.16.7"
   },
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",

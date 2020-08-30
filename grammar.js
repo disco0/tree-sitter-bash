@@ -47,6 +47,12 @@ module.exports = grammar({
     /\\?\s/,
   ],
 
+  supertypes: $ => [
+    $._statement,
+    $._expression,
+    $._primary_expression,
+  ],
+
   word: $ => $.word,
 
   rules: {
@@ -184,7 +190,10 @@ module.exports = grammar({
       repeat(seq('|', field('value', $._literal))),
       ')',
       optional($._statements),
-      prec(1, ';;')
+      prec(1, choice(
+        field('termination', ';;'),
+        field('fallthrough', choice(';&', ';;&'))
+      ))
     ),
 
     last_case_item: $ => seq(
@@ -207,7 +216,13 @@ module.exports = grammar({
           '(', ')'
         )
       ),
-      field('body', $.compound_statement)
+      field(
+        'body',
+        choice(
+          $.compound_statement,
+          $.subshell,
+          $.test_command)
+      )
     ),
 
     compound_statement: $ => seq(
@@ -314,7 +329,7 @@ module.exports = grammar({
 
     file_redirect: $ => prec.left(seq(
       field('descriptor', optional($.file_descriptor)),
-      choice('<', '>', '>>', '&>', '&>>', '<&', '>&'),
+      choice('<', '>', '>>', '&>', '&>>', '<&', '>&', '>|'),
       field('destination', $._literal)
     )),
 
@@ -347,6 +362,7 @@ module.exports = grammar({
     _expression: $ => choice(
       $._literal,
       $.unary_expression,
+      $.ternary_expression,
       $.binary_expression,
       $.postfix_expression,
       $.parenthesized_expression
@@ -370,6 +386,16 @@ module.exports = grammar({
         field('right', $.regex)
       )
     )),
+
+    ternary_expression: $ => prec.left(
+      seq(
+        field('condition', $._expression),
+        '?',
+        field('consequence', $._expression),
+        ':',
+        field('alternative', $._expression),
+      )
+    ),
 
     unary_expression: $ => prec.right(seq(
       choice('!', $.test_operator),
@@ -466,7 +492,7 @@ module.exports = grammar({
     expansion: $ => seq(
       '${',
       optional(choice('#', '!')),
-      choice(
+      optional(choice(
         seq(
           $.variable_name,
           '=',
@@ -487,7 +513,7 @@ module.exports = grammar({
             ':', ':?', '=', ':-', '%', '-', '#'
           ))
         ),
-      ),
+      )),
       '}'
     ),
 
